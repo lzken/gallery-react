@@ -41,8 +41,12 @@ function getDefaultModules() {
         loader: 'style-loader!css-loader!less-loader'
       },
       {
-        test: /\.styl/,
+        test: /\.style/,
         loader: 'style-loader!css-loader!stylus-loader'
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       },
       {
         test: /\.(png|jpg|gif|woff|woff2)$/,
